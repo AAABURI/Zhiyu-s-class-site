@@ -1,0 +1,39 @@
+html {
+  background-image: url("img/background.jpeg");
+}
+
+p {
+  color: darkgreen;
+  font-size: 50px;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  text-align: center;
+}
+
+.meme-img {
+  width:300px;
+  display:block;
+  margin:0 auto;
+}
+
+
+.common {
+  color: #fff;
+  background: #000;
+  border: 7px dotted lightblue;
+  border-radius: 30px;
+  padding: 40px;
+  margin: 60px;
+  hight: 200px;
+}
+
+#special {
+  color: darkred;
+  background: lightblue;
+}
