@@ -1,0 +1,20 @@
+html {
+  background-image: url("img/19.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+p {
+  color: #ffe8d6;
+  font-size:20px;
+  text-align: center;
+}
+a {
+  color: black;
+  text-decoration: none;
+  background: white;
+}
+
+
+ul  {
+  list-style: decimal;
+}
