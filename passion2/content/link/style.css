@@ -1,0 +1,47 @@
+html {
+
+  display:flow-root;
+  opacity: 0.6;
+  font-family: 'MedievalSharp', cursive;
+  padding-top: 30px;
+}
+
+div {
+    display: block;
+    text-align: center;
+}
+
+h1 {
+  width: 20px;
+  height: 20px;
+  text-align:inherit;
+  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left:80px;
+  padding-right: :80px;
+  font: 200%/1 'MedievalSharp', cursive;
+  color: #d45829;
+  transition: 2s;
+}
+
+
+P{
+  font-size: 20px;
+  color: #d45829;
+  text-align:right;
+  display:inline;
+
+}
+
+a{
+  color: #f9f0ec;
+  font-size: 20px;
+  background-color: #d45829;
+}
+
+h2,h3{
+    background-color: #d45829;
+    color: #f9f0ec;
+
+}

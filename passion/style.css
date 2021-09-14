@@ -1,20 +1,68 @@
 html {
-  background-image: url("img/19.jpg");
+  background-image: url("img/1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  display: block;
+  font-family: 'Abril Fatface', cursive;
+  padding-bottom: 250px;
 }
-p {
-  color: #ffe8d6;
-  font-size:20px;
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+div {
+  margin: 0 auto;
+  width: 960px;
+  height: auto;
+  top: 250px;
+  bottom: 250px;
   text-align: center;
-}
-a {
-  color: black;
-  text-decoration: none;
-  background: white;
+  color: #d45829;
+  font-size: 15px;
 }
 
+h1 {
 
-ul  {
-  list-style: decimal;
+  width: 300px;
+  height: 100px;
+  text-align: center;
+  padding: 20px;
+  padding-top: 250px;
+  padding-bottom: 560px;
+  font: 500%/1 'Abril Fatface', cursive;
+  color: #d45829;
+  transition: 2s;
+}
+
+h1:hover {
+  text-shadow: 0 0 .1em, 0 0 .3em;
+}
+
+.key {
+  color: #f94d0c;
+  text-decoration:underline;
+  text-shadow:5px 5px 5px rgb(246, 198, 159);
+}
+
+.b {
+  color: #da3f05;
+  text-decoration:underline;
+}
+
+.t{
+  color: #d45829;
+  text-decoration:none;
+}
+
+.gif-img {
+  width: 250px;
+  display: block;
+  margin: 0 auto;
+  padding-bottom:10px;
+  padding-right: 30px;
+  background-color: #d45829;
+  border-radius: 100%;
+
 }

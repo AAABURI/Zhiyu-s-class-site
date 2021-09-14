@@ -27,7 +27,12 @@ a {
   padding: 40px;
   margin: 80px;
   height: 20px;
+
 }
+a:hover{
+    color: rgb(167, 31, 108);
+}
+
 
 p {
   color:rgba(242, 241, 220, 0.6);
