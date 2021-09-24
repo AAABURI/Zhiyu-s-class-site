@@ -18,19 +18,26 @@ a {
   color: rgba(52, 7, 97, 0.76);
   text-decoration:underline;
   text-align: center;
-  font-size: 35px;
+  font-size: 30px;
   font-family: 'Amatic SC', cursive;
   background: white;
-  display:block;
+  display:grid;
   border: 7px dashed lightblue;
   border-radius: 50px;
-  padding: 40px;
-  margin: 80px;
-  height: 20px;
+  padding: 30px;
+
+  margin:0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  height: 10px;
+  width: 300px;
+
+
 
 }
 a:hover{
     color: rgb(167, 31, 108);
+    transform: scale(1.1);
 }
 
 

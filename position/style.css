@@ -1,0 +1,50 @@
+*{
+   box-sizing: border-box;
+}
+
+
+  img {
+    max-width: 100%;
+
+  }
+.box {
+  background-color: rgb(130, 190, 149);
+  width:200px;
+  height: 200px;
+  margin: 20px;
+  position: static;
+  z-index: 10;
+  position: relative;
+}
+
+.relative {
+  position:relative;
+  background-color:rgb(244, 157, 166);
+  top:100px;
+  left:100px;
+  z-index:9;
+}
+
+.fixed {
+  background-color:rgb(84, 13, 21);
+  position:fixed;
+  top:20px;
+  right:20px;
+}
+
+.absolute {
+  background-color: rgb(185, 240, 202);
+  position:absolute;
+  top: 10px;
+  right:20px;
+  width:50px;
+  height:50px;
+}
+
+.sticky{
+  background-color:rgb(240, 242, 145);
+  position:sticky;
+  top:40px;
+  left:0;
+
+}
