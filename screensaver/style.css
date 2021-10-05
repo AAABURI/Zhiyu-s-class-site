@@ -1,0 +1,287 @@
+*{
+   box-sizing: border-box;
+}
+
+
+  img {
+    max-width: 100%;
+
+  }
+
+body{
+
+  animation-name:sunset;
+  animation-duration:10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+  /*animation:sunset 3s infinite alternate linear;整合）*/
+
+
+@keyframes sunset{
+0%{
+  background: rgb(175, 211, 245);
+
+}
+15%{
+  background: rgb(137, 178, 217);
+}
+
+30%{
+  background: rgb(63, 117, 168);
+}
+
+40%{
+  background: rgb(16, 77, 135);
+}
+
+55%{
+  background: rgb(27, 51, 94);
+}
+
+80%{
+    background: rgb(18, 8, 46);
+  }
+  100%{
+      background: rgb(7, 2, 22);
+    }
+}
+  /*transform: translate(-50%, -50%);位移*/
+
+
+  @keyframes shake {
+  	0% {
+  		transform : rotate(5deg) scale(1);
+  	}
+  	50% {
+  		transform : rotate(-5deg) scale(1);
+  	}
+  	100% {
+  		transform : rotate(5deg) scale(1);
+  	}
+  }
+  @keyframes innerlightbreathe {
+  	0% {
+  		height : 30px;
+  		width : 30px;
+  		opacity : 0.1;
+  		top : 35px;
+  		left : 10px;
+  	}
+  	20% {
+  		-webkit-clip-path : inset(0px 0px 0px 0px);
+  		clip-path : inset(0px 0px 0px 0px);
+  	}
+  	50% {
+  		height : 60px;
+  		width : 60px;
+  		opacity : 0.5;
+  		top : 5px;
+  		left : -5px;
+  		-webkit-clip-path : inset(0px 5px 0px 5px);
+  		clip-path : inset(0px 5px 0px 5px);
+  	}
+  	80% {
+  		-webkit-clip-path : inset(0px 0px 0px 0px);
+  		clip-path : inset(0px 0px 0px 0px);
+  	}
+  	100% {
+  		height : 30px;
+  		width : 30px;
+  		opacity : 0.1;
+  		top : 35px;
+  		left : 10px;
+  	}
+  }
+  @keyframes outerlightbreathe {
+  	0% {
+  		height : 100px;
+  		width : 100px;
+  		top : -10px;
+  		left : -20px;
+  	}
+  	50% {
+  		height : 300px;
+  		width : 300px;
+  		top : -68px;
+  		left :-120px;
+  	}
+  	100% {
+  		height : 100px;
+  		width : 100px;
+  		top : -10px;
+  		left : -20px;
+  	}
+  }
+  .lantern {
+  	z-index : 999;
+  	position : absolute;
+  	height : 70px;
+  	width : 50px;
+  	transform-origin : top center;
+  }
+
+  .lantern:hover{
+    animation : shake 4s infinite;
+  }
+
+  .lanternBody {
+  	position : absolute;
+    display: flex;
+  	background-color : #d71f13;
+  	height : 70px;
+  	width : 50px;
+  	border-radius : 15px 15px 15px 15px;
+  }
+
+  .lanternBody-structure {
+    justify-content: center;
+   padding-top:45%;
+    background: rgb(62, 3, 3);
+    width: 50px;
+    height: 10px;
+    border-radius : 15px 15px 0px 0px;
+    }
+
+    .lanternBody-structurebottom {
+      position : absolute;
+      top : 100%;
+      background: rgb(62, 3, 3);
+      background-position:50px 50px;
+      width: 50px;
+      height: 10px;
+      border-radius : 0px 0px 15px 15px;
+      }
+
+    .lanternline {
+        justify-content: center;
+        position : absolute;
+        top : -150%;
+        left:45%;
+        background: rgb(62, 3, 3);
+        background-position:50px 50px;
+        width: 5px;
+        height: 88px;
+        }
+
+.outerLight {
+  	z-index : -2;
+  	position : absolute;
+  	background-image:
+  		radial-gradient(rgba(241, 117, 64, 1), rgba(117, 107, 60, 0.0), rgba(117, 107, 60, 0.0));
+  	opacity : 0.5;
+  	border-radius : 50%;
+  	animation : outerlightbreathe 4s ease-in-out infinite;
+  }
+  .innerLight {
+  	position : absolute;
+  	background-image:
+  		radial-gradient(rgba(255, 241, 181, 1.0), rgba(255, 241, 181, 1.0), rgba(255, 241, 181, 0.0));
+  	border-radius : 50%;
+  	animation : innerlightbreathe 4s ease-in-out infinite;
+  }
+
+  .handle{
+        position:absolute;
+        left:0px;
+        top:-95px;
+        background: rgb(62, 3, 3);
+        width: 310px;
+        height: 15px;
+        }
+
+        .handle: hover{
+          animation : slide 4s infinite;
+        }
+        .pole {
+              position:absolute;
+              left:260px;
+              top:-95px;
+              background: rgb(62, 3, 3);
+              width: 15px;
+              height: 330px;
+              }
+      .base {
+        position:absolute;
+        left:218px;
+        top:230px;
+      border-bottom: 100px solid rgb(142, 100, 89);
+      border-left: 25px solid transparent;
+      border-right: 25px solid transparent;
+      height: 0;
+      width: 100px;
+    }
+        .pole-triangle {
+          position:absolute;
+          left:175px;
+          top:-75px;
+          width: 0;
+          height: 0;
+          border-top: 80px solid rgb(62, 3, 3);
+          border-left: 80px solid transparent;
+        }
+
+  @keyframes slide {
+  	0% {
+  		left:0px;
+  	}
+  	50% {
+  		left:-10px;
+  	}
+  	100% {
+  		left:0;
+  	}
+  }
+
+
+
+  center {
+  	position : absolute;
+  	top : 50%;
+  	left : 50%;
+  }
+
+
+  .moonnight {
+    width: 200px;
+    height: 200px;
+    position:absolute;
+    top:25%;
+    left:27%;
+    border-radius: 50%;
+      opacity : 0.4;
+    box-shadow: 15px 15px 0 0 red;
+  }
+  .moon {
+    width:200px;
+    height:200px;
+    background: rgb(238, 232, 172);
+    position:absolute;
+    top:35%;
+    left:43%;
+    border-radius : 50%;
+    opacity : 0.8;
+  }
+  .moonlight {
+  height : 500px;
+  width : 500px;
+  position:absolute;
+  top:-70%;
+  left:-75%;
+  border-radius : 50%;
+  opacity : 0.5;
+  background-image:
+    radial-gradient(rgba(242, 234, 46, 1), rgba(117, 107, 60, 0.0), rgba(117, 107, 60, 0.0));
+}
+
+.png-img{
+  position:absolute;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+
+}
+body{
+  margin: 0;
+}
