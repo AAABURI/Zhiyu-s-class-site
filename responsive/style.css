@@ -1,0 +1,77 @@
+*{
+   box-sizing: border-box;
+}
+
+
+html{
+  background:rgb(231, 156, 128);
+
+
+}
+
+body{
+  margin: 0;
+
+}
+
+  img {
+    max-width: 100%;
+  }
+
+p{
+  background: rgb(70, 127, 212);
+  max-width:800px; /*100%--全部*/
+  font-size: 1.5rem;
+  padding:2rem;
+
+}
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  gap:20px;
+  padding:2rem;
+}
+
+
+  .item{
+  background-color: rgb(232, 228, 136);
+  width:200px;
+  height:200px;
+  font-size: 30px;
+  padding:2em;
+}
+
+.object{
+  background: rgb(212, 192, 252);
+  width:50vw;
+  height: 50vh;
+}
+
+.little-box{
+  background: rgb(99, 184, 176);
+  width:50%;
+  height: 50%;
+}
+
+@media screen and (max-width: 800px) {
+  html {
+    background-color: lightblue;
+    font-size: 200%;
+  }
+
+.container{
+  flex-direction: column;
+
+}
+
+  .item{
+    width:100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    background-color: rgb(76, 111, 201);
+  }
+}

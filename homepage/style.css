@@ -1,0 +1,209 @@
+html, body {
+  height: 100%;
+}
+
+a {
+    text-decoration: none;
+  color:#1217ed;
+}
+
+a:hover {
+  color: rgb(250, 250, 250);
+}
+
+#root {
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+#button {
+  padding: 0.3em 0.6em;
+  border: 1px solid #1217ed;
+  margin-top: 1em;
+  border-radius: 2px;
+  color: #1217ed;
+  cursor: pointer;
+}
+
+#button:hover {
+  background-color: #1217ed;
+  color: rgb(250, 250, 250);
+}
+
+#date{
+  border: 1px solid #1217ed;
+  border-radius: 2px;
+  color: #1217ed;
+  position: fixed;
+  bottom: 65px;
+}
+
+.sidebar{
+  background-color: #1217ed;
+  position:fixed;
+  top:0;
+  left: 0;
+  width:100%;
+  height:15px;
+}
+
+.sidebar2{
+  background-color: #1217ed;
+  position:fixed;
+bottom:0;
+  left: 0;
+  width:100%;
+  height:15px;
+}
+
+.marquee {
+  width: 100%; /* the plugin works for responsive layouts so width is not necessary */
+  overflow: hidden;
+  background-color: #1217ed;
+  color:white;
+  border:1px;
+  position: fixed;
+  bottom: 30px;
+  left: 0;
+  font-size: 16px;
+}
+
+.marquee2 {
+  width: 100%; /* the plugin works for responsive layouts so width is not necessary */
+  overflow: hidden;
+  color:#1217ed;
+  border:1px solid #1217ed;
+  position: fixed;
+  top: 30px;
+  left: 0;
+  right:0;
+  font-size: 16px;
+
+}
+
+#square {
+    width: 20px;
+    height: 20px;
+    background: #1217ed;
+    position:fixed;
+    left:10px;
+    bottom:65px;
+}
+
+#square2 {
+    width: 20px;
+    height: 20px;
+    background: #1217ed;
+    position:fixed;
+    right:10px;
+    bottom:65px;
+}
+
+#square3 {
+    width: 20px;
+    height: 20px;
+    background: #1217ed;
+    position:fixed;
+    left:10px;
+    top:65px;
+}
+
+#square4 {
+    width: 20px;
+    height: 20px;
+    background: #1217ed;
+    position:fixed;
+    right:10px;
+    top:65px;
+}
+
+#square5 {
+    width:  93%;
+    height: 20px;
+    background: #1217ed;
+    position:fixed;
+    top:65px;
+    left:50px;
+
+}
+
+#square6 {
+    width: 75%;
+    height: 20px;
+    background: #1217ed;
+    position:fixed;
+    top:65px;
+    right:50px;
+
+}
+
+
+.sometimes{
+    color:#1217ed;
+    font-weight: bolder;
+    text-decoration: overline 1.5px;
+    position:fixed;
+    bottom:50px;
+    left:50px;
+}
+
+
+.nothing{
+    color:#1217ed;
+    font-weight: bolder;
+    text-decoration: overline 1.5px;
+    position:fixed;
+    bottom:50px;
+    right:50px;
+}
+.HOME{
+  color:#1217ed;
+  font-size: 40px;
+  font-weight:400;
+  position:fixed;
+  top:35px;
+  left:50px;
+}
+.page{
+  background-color: #1217ed;
+  color:white;
+  font-size: 40px;
+  font-weight:400;
+  position:fixed;
+  top:71px;
+  left:110px;
+
+}
+
+#top{
+text-align: center;
+border: 1px solid #1217ed;
+width:80px;
+border-radius: 2px;
+background-color:#1217ed;
+color: white;
+cursor: pointer;
+position: fixed;
+top:21%;
+left:47.4%;
+}
+
+.secret{
+  background-color:#1217ed;
+  color:white;
+  width:200px;
+  height:80px;
+  position: fixed;
+  top:75%;
+  left:44%;
+  opacity: 0;
+}
+.secret-btn:hover + .secret{
+  opacity: 1;
+}
