@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>main page</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="shell">
+        <div class="main-top">
+
+            <h2><a class="t" href="poet/index.html">Dylan <br>Thomas
+            </a>
+            </h2>
+            <div class="ball">
+                <img class="img" src="d.png" alt="">
+            </div>
+            <div class="line"></div>
+            <span>1914–1953</span>
+        </div>
+        <div class="main-bottom">
+            <h2>Dylan Thomas</h2>
+            <span>
+                Dylan Marlais Thomas, born October 27, 1914, in South Wales, was the archetypal Romantic poet of the popular American imagination.
+            </span>
+
+        </div>
+    </div>
+
+
+    <div class="shell">
+        <div class="main-top">
+            <h2> <a class="t" href="poem/index.html"> Poem </a></h2>
+            <div class="ball">
+                <img src="y.png" alt="">
+            </div>
+            <div class="line"></div>
+            <span>Do not go gentle into that good night</span>
+        </div>
+        <div class="main-bottom">
+
+            <span>
+                From The Poems of Dylan Thomas, published by New Directions. Copyright © 1952, 1953 Dylan Thomas. Copyright © 1937, 1945, 1955, 1962, 1966, 1967 the Trustees for the Copyrights of Dylan Thomas. Copyright © 1938, 1939, 1943, 1946, 1971 New Directions Publishing Corp. Used with permission.
+            </span>
+        </div>
+    </div>
+
+    <div class="shell">
+        <div class="main-top">
+            <h2><a class="t" href="explain/index.html">Meaning</a></h2>
+            <div class="ball">
+                <img src="b.png" alt="">
+            </div>
+            <div class="line"></div>
+            <span>What does it say?</span>
+        </div>
+        <div class="main-bottom">
+            <h2>Explanation</h2>
+            <span>
+              What does the poem say? What is its theme? Here is something you don't know about this poem.
+            </span>
+        </div>
+
+    </div>
+
+
+</body>
+
+<p class="time" id="demo"></p>
+
+<script class="time">
+setInterval(myTimer, 1000);
+
+function myTimer() {
+  const d = new Date();
+  document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+}
+</script>
+
+</html>

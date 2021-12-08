@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="style.css">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Do not go gentle into that good night</title>
+  </head>
+<div id="stars"></div>
+<div id="stars2"></div>
+<div id="stars3"></div>
+<div class="text">
+
+
+</div>
+
+<body>
+    <h1>Do not go gentle<br/>into that good night</h1>
+    <div class="background"><span>Goat</span></div>
+    <h2>
+      Do not go gentle into that good night,<div>
+  Old age should burn and rave at close of day;<div>
+  Rage, rage against the dying of the light.<div>
+  Though wise men at their end know dark is right,<div>
+  Because their words had forked no lightning they
+  Do not go gentle into that good night.<div>
+  Good men, the last wave by, crying how bright
+  Their frail deeds might have danced in a green bay,<div>
+  Rage, rage against the dying of the light.<div>
+  Wild men who caught and sang the sun in flight,<div>
+  And learn, too late, they grieved it on its way,<div>
+  Do not go gentle into that good night.<div>
+  Grave men, near death, who see with blinding sight
+  Blind eyes could blaze like meteors and be gay,<div>
+  Rage, rage against the dying of the light.<div>
+  And you, my father, there on the sad height,<div>
+  Curse, bless me now with your fierce tears, I pray.<div>
+  Do not go gentle into that good night.<div>
+  Rage, rage against the dying of the light.<div>
+    </h2>
+
+<script>
+    const background = document.querySelector(".background")
+
+    document.addEventListener('scroll', () => {
+        const scrollY = window.scrollY
+
+        if (scrollY !== 0) {
+            background.style.backgroundPosition = `calc(50% + ${scrollY}px) calc(50% + ${scrollY}px)`
+        }else{
+            background.style.backgroundPosition = ''
+        }
+    })
+</script>
+</body>
+</html>

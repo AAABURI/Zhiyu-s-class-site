@@ -29,6 +29,7 @@ border-radius：#infinity {
       height: 100px;
       background: red;
     }
+
     p{
       background: rgba(255, 0, 0, 0.5);
       margin:0 auto;
@@ -37,10 +38,20 @@ border-radius：#infinity {
       width:300px;
       height:300px;
       text-align: center;
-
+      font-size: 18px;
     }
+html{
+  background-color: rgb(181, 159, 218);
+}
 
+h1{
+  text-align: center;
+  color: rgb(57, 38, 75);
+}
 
+body{
+  text-align: center;
+}
 .text {
   color: white;
   font-size: 20px;
@@ -51,4 +62,11 @@ border-radius：#infinity {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+.r2-img {
+
+  width:350px;
+  display:block;
+  margin:0 auto;
 }

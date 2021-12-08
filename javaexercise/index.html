@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Make a Decision👀</title>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+    <div id="fa">
+        <div class="option">French food</div>
+        <div class="option">Italian food</div>
+        <div class="option">Chinese food</div>
+        <div class="option">Thai food</div>
+        <div id="start">*What should I eat today?*</div>
+        <div class="option">Mexican food</div>
+        <div class="option">Japanese food</div>
+        <div class="option">Spanish food</div>
+        <div class="option">No food</div>
+    </div>
+
+    <script>
+
+        let but = document.getElementById('start');
+        let options = document.getElementsByClassName('option');
+        let timer = null;
+        but.onclick = function(){
+
+            let num = 0;
+
+            if(timer==null){
+                timer = setInterval(()=>{
+                    num++;
+
+                    let ran = Math.round(Math.random()*(7-0)+0);
+
+                    for(let i=0;i<options.length;i++){
+                        options[i].style.backgroundColor = '#fff';
+
+                    }
+                    options[ran].style.backgroundColor = 'rgb(222, 215, 238)';
+
+
+                    if(num>=30){
+                        clearInterval(timer);
+                        timer = null;
+                    }
+                },100);
+            }
+
+        }
+
+    </script>
+</body>
+</html>

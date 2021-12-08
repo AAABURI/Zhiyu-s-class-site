@@ -1,0 +1,27 @@
+
+
+#fa{
+  color:rgb(38, 36, 142);
+  font-family: 'Amatic SC', cursive;
+  font-weight: bold;
+
+    margin: auto;
+    margin-top: 10%;
+    width: 600px;
+    height: 600px;
+    border:2px solid rgb(186, 168, 223);
+}
+#fa>div{
+    width: 33%;
+    height: 33%;
+    border: 1px solid rgb(186, 168, 223);
+    float:left;
+    line-height: 200px;
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+}
+#start{
+    cursor: pointer;
+    background-color: rgb(186, 168, 223);
+}
