@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image:url("image/background.jpg");
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.shell {
+    width: 100%;
+    height: 80vh;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    position: relative
+
+}
+
+.content h2 {
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 99;
+    margin-top: 5px;
+    color:  #aac5d1;
+
+    font: 60 10px ;
+}
+.content h3 {
+    position: absolute;
+    text-align: right;
+    left: 80%;
+    transform: translate(-50%);
+    z-index: 99;
+    margin-top: 5px;
+    color:  #aac5d1;
+    font: 60 8px ;
+
+}
+.content h4 {
+    position: absolute;
+    text-align: right;
+    right: 60%;
+    transform: translate(-600%);
+    z-index: 99;
+    margin-top: 5px;
+    color:  #aac5d1;
+    font: 60 8px ;
+}
+
+.t{
+  color:  #aac5d1;
+}
+
+.images {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+
+.images div {
+    background-size: cover;
+    position: absolute;
+}
+
+.img1 {
+    background-image: url('./image/background.jpg');
+    width: 100%;
+    height: 100%;
+}
+
+.img2 {
+    background-image: url('./image/letter.png');
+    width: 50%;
+    height: 50%;
+    bottom:0;
+}
+
+.img3 {
+    background-image: url('./image/pen.png');
+    width: 50%;
+    height: 80%;
+
+}
+
+.img5 {
+    background-image: url('./image/dt1.png');
+    width: 100%;
+    height: 100%;
+}

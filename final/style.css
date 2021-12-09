@@ -17,7 +17,6 @@ body{
     overflow: hidden;
 }
 
-
 .main-top{
     width: 100%;
     height: 100%;
@@ -35,6 +34,7 @@ body{
 
 .t{
   color: #fff;
+  font-family: 'Titillium Web', sans-serif;
 }
 .time{
     color: #fff;
@@ -85,8 +85,9 @@ body{
     text-align: center;
     font-size: 10px;
     color: #626caa;
-    padding:15px 0;
+    padding:3px 0;
     border-radius: 10px 10px;
+    font-family: 'Titillium Web', sans-serif;
 }
 .main-bottom span{
     display: block;

@@ -1,0 +1,72 @@
+ html,
+  body {
+      margin: 0;
+      padding: 0;
+      height: 380vh;
+      overflow-x: hidden;
+      background-image: linear-gradient(#9dacc7,#223a67);
+  }
+
+  .background {
+      background-image: url("background.jpg");
+      background-size:cover;
+      background-position: 50% 50%;
+      height: 70vh;
+      font: 20 20rem '';
+      font-family: 'Titillium Web', sans-serif;
+      font-weight:900;
+      line-height: 80vh;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      position:relative;
+      text-align: center;
+      overflow: hidden;
+  }
+
+  .background::before {
+      content: '';
+      background-size: cover;
+      background-color: : rgb(221, 207, 185);
+      background-position: 50% 50%;
+      position: absolute;
+      top: 5;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      z-index: -99;
+
+  }
+
+  .h1 {
+      background-image: url("background.jpg");
+      background-size:cover;
+      background-position: 50% 50%;
+      height: 50vh;
+      font: 4 4rem '';
+      font-weight:900;
+      line-height: 80vh;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      position:relative;
+      text-align: center;
+      overflow: hidden;
+      font-family: 'Titillium Web', sans-serif;
+  }
+
+
+  h2 {
+      position: absolute;
+      letter-spacing: 2px;
+      top: 130vh;
+      width: 60%;
+      color: #232545;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 30px;
+      font-family: 'Titillium Web', sans-serif;
+
+  }
+
+  .t{
+    color: #223a67;
+  }

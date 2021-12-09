@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+
+  <title>Dylan Thomas</title>
+
+</head>
+
+<body>
+  <div class="shell">
+    <div class="content">
+      <h2>Dylan Thomas<br />︾</h2>
+      <h3>Brief Introduction<br />︾<br />
+        Dylan Marlais Thomas was born on October 27, 1914, in Swansea, South Wales. His father was an English Literature professor at the local grammar school and would often recite Shakespeare, fortifying Thomas's love for the rhythmic ballads of
+        Gerard Manley Hopkins, W. B. Yeats, and Edgar Allan Poe.
+        <br />    <br />
+        In 1947 Thomas was awarded a Traveling Scholarship from the Society of Authors. He took his family to Italy, and while in Florence, he wrote In Country Sleep, And Other Poems (Dent, 1952), which includes his most famous poem, "Do not go
+        gentle into that good night."
+      </h3>
+<h4><a class="t" href="../index.html">Go back<br />︾</h4>
+
+
+
+
+      <div class="images">
+        <div class="img1"></div>
+
+        <div class="img2"></div>
+      <div class="img3"></div>
+        <div class="img4"></div>
+        <div class="img5"></div>
+        <div class="img6"></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let img1 = document.querySelector('.img1')
+    let img3 = document.querySelector('.img3')
+    let img4 = document.querySelector('.img4')
+    let img5 = document.querySelector('.img5')
+
+    document.addEventListener('mousemove', e => {
+
+      let mouseX = e.clientX
+      let mouseY = e.clientY
+
+      let img1x = img1.offsetLeft
+      let img1y = img1.offsetTop
+
+      let img3x = img3.offsetLeft
+      let img3y = img3.offsetTop
+
+      let img4x = img4.offsetLeft
+      let img4y = img4.offsetTop
+
+      let img5x = img5.offsetLeft
+      let img5y = img5.offsetTop
+
+      let diff1x = (mouseX - img1x) / 45
+      let diff1y = (mouseY - img1y) / 45
+
+      let diff3x = (mouseX - img3x) / 18
+      let diff3y = (mouseY - img3y) / 18
+
+      let diff4x = (mouseX - img4x) / 30
+      let diff4y = (mouseY - img4y) / 30
+
+      let diff5x = (mouseX - img5x) / 8
+      let diff5y = (mouseY - img5y) / 8
+
+      img1.style.transform = `translate(${diff1x}px,${diff1y}px)`
+      img3.style.transform = `translate(${diff3x}px,${diff3y}px)`
+      img4.style.transform = `translate(${diff4x}px,${diff4y}px)`
+      img5.style.transform = `translate(${diff5x}px,${diff5y}px)`
+    })
+  </script>
+</body>
+
+</html>
